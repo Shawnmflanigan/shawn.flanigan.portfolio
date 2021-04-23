@@ -1,17 +1,11 @@
-/* #Links {
+#nav {
     font-size: 2rem;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 600;
     line-height: 1.5;
     letter-spacing: 0.00938em;
     color: beige;
-  } */
-
-  #nav {
-    font-size: 2rem;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    font-weight: 600;
-    line-height: 1.5;
-    letter-spacing: 0.00938em;
-    color: beige;
+    display: flex;
+  justify-content: center;
+  align-items: center;
   }

@@ -11,55 +11,92 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import IconButton from "@material-ui/core/IconButton";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import WorkIcon from "@material-ui/icons/Work";
-import profileImage from "../images/profileImage.png"
-import Box from '@material-ui/core/Box';
+import profileImage from "../images/profileImage.png";
+import Box from "@material-ui/core/Box";
+import "./ProfileCard.css";
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 345,
+    maxWidth: 500,
   },
   media: {
-    height: 140,
+    height: 500,
+    width: 500,
   },
 });
+
+function handleClick({ href }) {
+  IconButton = { href };
+}
 
 export default function ProfileCard() {
   const classes = useStyles();
 
   return (
-    <Box width={500} display="flex" justifyContent="center" m={4} p={4} bgcolor="background.paper">
-    
-    <Card className={classes.root}>
-      <CardActionArea>
-        <CardMedia
-          className={classes.media}
-          image= {profileImage}
-          title="Profile Image"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            About Me:
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            Portfolio Place holder
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      <CardActions>
-        <IconButton color="primary" aria-label="Github">
-          <GitHubIcon />
-        </IconButton>
-        <IconButton color="primary" aria-label="LinkedIn">
-          <LinkedInIcon />
-        </IconButton>
-        <IconButton color="primary" aria-label="Email">
-          <MailOutlineIcon />
-        </IconButton>
-        <IconButton color="primary" aria-label="Resume">
-          <WorkIcon />
-        </IconButton>
-      </CardActions>
-    </Card>
-    // </Box>
+    <Box
+      width="100%"
+      display="flex"
+      justifyContent="center"
+      bgcolor="background.transparent"
+      id="boxContainer"
+    >
+      <Card className={classes.root}>
+        <CardActionArea>
+          <CardMedia
+            className={classes.media}
+            image={profileImage}
+            title="Profile Image"
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="h2">
+              About Me:
+            </Typography>
+            <Typography variant="body2" color="textSecondary" component="p">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              mollitia, molestiae quas vel sint commodi repudiandae consequuntur
+              voluptatum laborum numquam blanditiis harum quisquam eius sed odit
+              fugiat iusto fuga praesentium optio, eaque rerum! Provident
+              similique accusantium nemo autem. Veritatis obcaecati tenetur iure
+              eius earum ut molestias architecto voluptate aliquam nihil,
+              eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+              tenetur error, harum nesciunt ipsum debitis quas aliquid.
+              Reprehenderit, quia. Quo neque error repudiandae fuga? Ipsa
+              laudantium molestias eos sapiente officiis modi at sunt excepturi
+              expedita sint? Sed quibusdam recusandae alias error harum maxime
+              adipisci amet laborum.
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+        <CardActions>
+          <IconButton
+            color="primary"
+            aria-label="Github"
+            href="https://github.com/Shawnmflanigan"
+            onclick={handleClick}
+          >
+            <GitHubIcon />
+          </IconButton>
+          <IconButton
+            color="primary"
+            aria-label="LinkedIn"
+            href="https://www.linkedin.com/in/shawnmflanigan/"
+            onclick={handleClick}
+          >
+            <LinkedInIcon />
+          </IconButton>
+          <IconButton
+            color="primary"
+            aria-label="Email"
+            href="mailto:shawnmflanigan@gmail.com"
+            onclick={handleClick}
+          >
+            <MailOutlineIcon />
+          </IconButton>
+          <IconButton color="primary" aria-label="Resume">
+            <WorkIcon />
+          </IconButton>
+        </CardActions>
+      </Card>
+    </Box>
   );
 }
