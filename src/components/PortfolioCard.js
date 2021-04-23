@@ -24,7 +24,7 @@ export default function ProfileCard() {
   const classes = useStyles();
 
   return (
-    <Box width={500} display="flex" justifyContent="center" m={4} p={4} bgcolor="background.paper">
+    // <Box width={250} display="flex" justifyContent="center" m={4} p={4} bgcolor="background.paper">
     
     <Card className={classes.root}>
       <CardActionArea>
@@ -51,6 +51,6 @@ export default function ProfileCard() {
         </IconButton>
       </CardActions>
     </Card>
-    </Box>
+    // </Box>
   );
 }
