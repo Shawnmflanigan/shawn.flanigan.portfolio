@@ -71,6 +71,7 @@ export default function ProfileCard() {
           <IconButton
             color="primary"
             aria-label="Github"
+            target="blank"
             href="https://github.com/Shawnmflanigan"
             onclick={handleClick}
           >
@@ -79,6 +80,7 @@ export default function ProfileCard() {
           <IconButton
             color="primary"
             aria-label="LinkedIn"
+            target="blank"
             href="https://www.linkedin.com/in/shawnmflanigan/"
             onclick={handleClick}
           >
@@ -87,6 +89,7 @@ export default function ProfileCard() {
           <IconButton
             color="primary"
             aria-label="Email"
+            target="blank"
             href="mailto:shawnmflanigan@gmail.com"
             onclick={handleClick}
           >
