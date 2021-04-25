@@ -20,28 +20,7 @@ const useStyles = makeStyles((theme) => ({
   
     return (
       <div className={classes.root}>
-        <Grid container spacing={6}>
-          <Grid item xs={4}>
-            <PortfolioCard />
-          </Grid>
-          <Grid item xs={4}>
-            <PortfolioCard />
-          </Grid>
-          <Grid item xs={4}>
-            <PortfolioCard />
-          </Grid>
-        </Grid>
-        <Grid container spacing={6}>
-          <Grid item xs={4}>
-            <PortfolioCard />
-          </Grid>
-          <Grid item xs={4}>
-            <PortfolioCard />
-          </Grid>
-          <Grid item xs={4}>
-            <PortfolioCard />
-          </Grid>
-        </Grid>
+        <PortfolioCard />
       </div>
     );
   }
