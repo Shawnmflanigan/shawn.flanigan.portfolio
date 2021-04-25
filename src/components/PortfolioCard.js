@@ -14,9 +14,9 @@ import Castaway from "../images/castaway.gif";
 import Employee from "../images/employeeDirectory.gif";
 import Grid from "@material-ui/core/Grid";
 import Exercise from "../images/exercise.gif";
-import Expense from "../images/expenseTracker.gif"
-import Mad from "../images/madLibs.gif"
-import Wimpys from "../images.wimpys.gif"
+import Expense from "../images/expenseTracker.gif";
+import Mad from "../images/madLibs.gif";
+import Wimpys from "../images/wimpys.gif";
 
 const useStyles = makeStyles({
   root: {
@@ -27,7 +27,11 @@ const useStyles = makeStyles({
   },
 });
 
-export default function ProfileCard() {
+function handleClick({ href }) {
+  IconButton = { href };
+}
+
+export default function PortfolioCard() {
   const classes = useStyles();
 
   return (
@@ -43,15 +47,26 @@ export default function ProfileCard() {
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="h2">
-                  Castaway: Flight of the Pheonix
+                  Castaway
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                  Portfolio Place holder
+                  A CYOA game using express, sequelize, express handlebars, and
+                  css/js animations.
+                  <br />
+                  <br />
+                  <br />
+                  <br />
                 </Typography>
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <IconButton color="primary" aria-label="Github">
+              <IconButton
+                color="primary"
+                aria-label="Github"
+                target="blank"
+                href="https://github.com/Shawnmflanigan/CYOA"
+                onclick={handleClick}
+              >
                 <GitHubIcon />
               </IconButton>
               <IconButton color="primary" aria-label="Deployed Site">
@@ -71,18 +86,33 @@ export default function ProfileCard() {
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="h2">
-                  About Me:
+                  Employee Directory Search
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                  Portfolio Place holder
+                  This application allows the user to sort and search all
+                  employees in a company by multiple criteria; it was built
+                  using React and React-Bootstrap. Additional dependancies are
+                  listed in the dependancy section.
                 </Typography>
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <IconButton color="primary" aria-label="Github">
+              <IconButton
+                color="primary"
+                aria-label="Github"
+                target="blank"
+                href="https://github.com/Shawnmflanigan/employee-directory"
+                onclick={handleClick}
+              >
                 <GitHubIcon />
               </IconButton>
-              <IconButton color="primary" aria-label="Deployed Site">
+              <IconButton
+                color="primary"
+                aria-label="Deployed Site"
+                target="blank"
+                href="https://your-employees.herokuapp.com/"
+                onclick={handleClick}
+              >
                 <LanguageIcon />
               </IconButton>
             </CardActions>
@@ -99,18 +129,35 @@ export default function ProfileCard() {
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="h2">
-                  About Me:
+                  Expense Tracker
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                  Portfolio Place holder
+                  This application uses service worker, express, mongoDB, and
+                  JQuery to allow the user to track their budget over time both
+                  online and offline.
+                  <br />
+                  <br />
+                  <br />
                 </Typography>
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <IconButton color="primary" aria-label="Github">
+              <IconButton
+                color="primary"
+                aria-label="Github"
+                target="blank"
+                href="https://github.com/Shawnmflanigan/expenseTracker"
+                onclick={handleClick}
+              >
                 <GitHubIcon />
               </IconButton>
-              <IconButton color="primary" aria-label="Deployed Site">
+              <IconButton
+                color="primary"
+                aria-label="Deployed Site"
+                target="blank"
+                href="https://stark-island-01770.herokuapp.com/"
+                onclick={handleClick}
+              >
                 <LanguageIcon />
               </IconButton>
             </CardActions>
@@ -129,18 +176,36 @@ export default function ProfileCard() {
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="h2">
-                  Castaway: Flight of the Pheonix
+                  Mad Libz
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                  Portfolio Place holder
+                  A whimisical web application which allows a user to play the
+                  classic mad libs game with random stories. Built using JS,
+                  HTML, Bulma CSS and an open source API.
+                  <br />
+                  <br />
+                  <br />
+                  <br />
                 </Typography>
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <IconButton color="primary" aria-label="Github">
+              <IconButton
+                color="primary"
+                aria-label="Github"
+                target="blank"
+                href="https://github.com/Shawnmflanigan/MadLibz-1"
+                onclick={handleClick}
+              >
                 <GitHubIcon />
               </IconButton>
-              <IconButton color="primary" aria-label="Deployed Site">
+              <IconButton
+                color="primary"
+                aria-label="Deployed Site"
+                target="blank"
+                href="https://teammadlibz.github.io/MadLibz/"
+                onclick={handleClick}
+              >
                 <LanguageIcon />
               </IconButton>
             </CardActions>
@@ -157,18 +222,35 @@ export default function ProfileCard() {
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="h2">
-                  About Me:
+                  Wimpy's Burgers
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                  Portfolio Place holder
+                  This application uses handlebars, express, a MySQL database
+                  and a custom ORM to handle user input on the main interface.
+                  This project follows the MVC pattern. The deployed site
+                  illustrates these operations by allowing a user to 'create'
+                  and 'destroy'(eat) burgers and displays the eaten burgers in
+                  another column.
                 </Typography>
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <IconButton color="primary" aria-label="Github">
+              <IconButton
+                color="primary"
+                aria-label="Github"
+                target="blank"
+                href="https://github.com/Shawnmflanigan/welcome_to_wimpys"
+                onclick={handleClick}
+              >
                 <GitHubIcon />
               </IconButton>
-              <IconButton color="primary" aria-label="Deployed Site">
+              <IconButton
+                color="primary"
+                aria-label="Deployed Site"
+                target="blank"
+                href="https://wimpys.herokuapp.com/"
+                onclick={handleClick}
+              >
                 <LanguageIcon />
               </IconButton>
             </CardActions>
@@ -185,18 +267,37 @@ export default function ProfileCard() {
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="h2">
-                  About Me:
+                  Exercise Tracker
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                  Portfolio Place holder
+                  This application uses mongodb, javascript, and RESTfull design
+                  to allow the user to add, track, and view exercises.
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+
                 </Typography>
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <IconButton color="primary" aria-label="Github">
+              <IconButton
+                color="primary"
+                aria-label="Github"
+                target="blank"
+                href="https://github.com/Shawnmflanigan/exerciseapp"
+                onclick={handleClick}
+              >
                 <GitHubIcon />
               </IconButton>
-              <IconButton color="primary" aria-label="Deployed Site">
+              <IconButton
+                color="primary"
+                aria-label="Deployed Site"
+                target="blank"
+                href="https://stormy-sea-50426.herokuapp.com/?id=605e3aff8295c90015ecefc0"
+                onclick={handleClick}
+              >
                 <LanguageIcon />
               </IconButton>
             </CardActions>
