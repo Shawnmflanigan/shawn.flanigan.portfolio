@@ -12,7 +12,7 @@ import IconButton from "@material-ui/core/IconButton";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import WorkIcon from "@material-ui/icons/Work";
 import profileImage from "../images/profileImage.png";
-import Box from "@material-ui/core/Box";
+import Resume from "../images/flaniganresume.pdf"
 import "./ProfileCard.css";
 
 const useStyles = makeStyles({
@@ -25,19 +25,12 @@ const useStyles = makeStyles({
   },
 });
 
-function handleClick({ href }) {
-  IconButton = { href };
-}
-
 export default function ProfileCard() {
   const classes = useStyles();
 
   return (
-    <Box
+    <div
       width="100%"
-      display="flex"
-      justifyContent="center"
-      bgcolor="background.transparent"
       id="boxContainer"
     >
       <Card className={classes.root}>
@@ -73,7 +66,7 @@ export default function ProfileCard() {
             aria-label="Github"
             target="blank"
             href="https://github.com/Shawnmflanigan"
-            onclick={handleClick}
+            
           >
             <GitHubIcon />
           </IconButton>
@@ -82,7 +75,7 @@ export default function ProfileCard() {
             aria-label="LinkedIn"
             target="blank"
             href="https://www.linkedin.com/in/shawnmflanigan/"
-            onclick={handleClick}
+            
           >
             <LinkedInIcon />
           </IconButton>
@@ -91,15 +84,19 @@ export default function ProfileCard() {
             aria-label="Email"
             target="blank"
             href="mailto:shawnmflanigan@gmail.com"
-            onclick={handleClick}
+            
           >
             <MailOutlineIcon />
           </IconButton>
-          <IconButton color="primary" aria-label="Resume">
+          <IconButton color="primary"
+            aria-label="Resume"
+            target="blank"
+            href download={Resume}
+            >
             <WorkIcon />
           </IconButton>
         </CardActions>
       </Card>
-    </Box>
+    </div>
   );
 }

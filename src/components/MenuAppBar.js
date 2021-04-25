@@ -1,7 +1,6 @@
 import React from 'react';
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
 import Link from '@material-ui/core/Link';
-import { Box } from '@material-ui/core';
 import './MenuAppBar.css'
 
 function handleClick({href}) {
@@ -10,7 +9,11 @@ function handleClick({href}) {
 
 export default function MenuAppBar() {
   return (
-    <Box width="100%" display="flex" justifyContent="center" m={4} p={4} bgcolor="background.transparent">
+    <div
+      width="100%"
+      display="flex"
+      id="boxContainer"
+    >
     <Breadcrumbs aria-label="breadcrumb" id="nav">
       <Link color="inherit" href="/about" onClick={handleClick}>
         About
@@ -18,7 +21,10 @@ export default function MenuAppBar() {
       <Link color="inherit" href="/portfolio" onClick={handleClick}>
         Portfolio
       </Link>
+      <Link color="inherit" href="/technologies" onClick={handleClick}>
+        Technologies
+      </Link>
     </Breadcrumbs>
-    </Box>
+    </div>
   );
 }

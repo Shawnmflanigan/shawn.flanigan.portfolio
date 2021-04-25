@@ -27,10 +27,6 @@ const useStyles = makeStyles({
   },
 });
 
-function handleClick({ href }) {
-  IconButton = { href };
-}
-
 export default function PortfolioCard() {
   const classes = useStyles();
 
@@ -65,7 +61,6 @@ export default function PortfolioCard() {
                 aria-label="Github"
                 target="blank"
                 href="https://github.com/Shawnmflanigan/CYOA"
-                onclick={handleClick}
               >
                 <GitHubIcon />
               </IconButton>
@@ -102,7 +97,6 @@ export default function PortfolioCard() {
                 aria-label="Github"
                 target="blank"
                 href="https://github.com/Shawnmflanigan/employee-directory"
-                onclick={handleClick}
               >
                 <GitHubIcon />
               </IconButton>
@@ -111,7 +105,6 @@ export default function PortfolioCard() {
                 aria-label="Deployed Site"
                 target="blank"
                 href="https://your-employees.herokuapp.com/"
-                onclick={handleClick}
               >
                 <LanguageIcon />
               </IconButton>
@@ -147,7 +140,6 @@ export default function PortfolioCard() {
                 aria-label="Github"
                 target="blank"
                 href="https://github.com/Shawnmflanigan/expenseTracker"
-                onclick={handleClick}
               >
                 <GitHubIcon />
               </IconButton>
@@ -156,7 +148,6 @@ export default function PortfolioCard() {
                 aria-label="Deployed Site"
                 target="blank"
                 href="https://stark-island-01770.herokuapp.com/"
-                onclick={handleClick}
               >
                 <LanguageIcon />
               </IconButton>
@@ -195,7 +186,6 @@ export default function PortfolioCard() {
                 aria-label="Github"
                 target="blank"
                 href="https://github.com/Shawnmflanigan/MadLibz-1"
-                onclick={handleClick}
               >
                 <GitHubIcon />
               </IconButton>
@@ -204,7 +194,6 @@ export default function PortfolioCard() {
                 aria-label="Deployed Site"
                 target="blank"
                 href="https://teammadlibz.github.io/MadLibz/"
-                onclick={handleClick}
               >
                 <LanguageIcon />
               </IconButton>
@@ -240,7 +229,6 @@ export default function PortfolioCard() {
                 aria-label="Github"
                 target="blank"
                 href="https://github.com/Shawnmflanigan/welcome_to_wimpys"
-                onclick={handleClick}
               >
                 <GitHubIcon />
               </IconButton>
@@ -249,7 +237,6 @@ export default function PortfolioCard() {
                 aria-label="Deployed Site"
                 target="blank"
                 href="https://wimpys.herokuapp.com/"
-                onclick={handleClick}
               >
                 <LanguageIcon />
               </IconButton>
@@ -287,7 +274,6 @@ export default function PortfolioCard() {
                 aria-label="Github"
                 target="blank"
                 href="https://github.com/Shawnmflanigan/exerciseapp"
-                onclick={handleClick}
               >
                 <GitHubIcon />
               </IconButton>
@@ -296,7 +282,6 @@ export default function PortfolioCard() {
                 aria-label="Deployed Site"
                 target="blank"
                 href="https://stormy-sea-50426.herokuapp.com/?id=605e3aff8295c90015ecefc0"
-                onclick={handleClick}
               >
                 <LanguageIcon />
               </IconButton>
