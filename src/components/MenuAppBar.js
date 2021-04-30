@@ -21,8 +21,8 @@ export default function MenuAppBar() {
       <Link color="inherit" href="/portfolio" onClick={handleClick}>
         Portfolio
       </Link>
-      <Link color="inherit" href="/technologies" onClick={handleClick}>
-        Technologies
+      <Link color="inherit" href="/resume" onClick={handleClick}>
+        Resume
       </Link>
     </Breadcrumbs>
     </div>

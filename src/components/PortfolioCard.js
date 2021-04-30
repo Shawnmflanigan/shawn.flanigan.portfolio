@@ -31,9 +31,9 @@ export default function PortfolioCard() {
   const classes = useStyles();
 
   return (
-    <div>
+    <div id="portfolio">
       <Grid container spacing={6}>
-        <Grid item xs={4}>
+        <Grid item med={12}>
           <Card className={classes.root}>
             <CardActionArea>
               <CardMedia
@@ -71,7 +71,7 @@ export default function PortfolioCard() {
           </Card>
         </Grid>
 
-        <Grid item xs={4}>
+        <Grid item med={12}>
           <Card className={classes.root}>
             <CardActionArea>
               <CardMedia
@@ -112,7 +112,7 @@ export default function PortfolioCard() {
           </Card>
         </Grid>
 
-        <Grid item xs={4}>
+        <Grid item med={12}>
           <Card className={classes.root}>
             <CardActionArea>
               <CardMedia
@@ -157,7 +157,7 @@ export default function PortfolioCard() {
       </Grid>
 
       <Grid container spacing={6}>
-        <Grid item xs={4}>
+        <Grid item med={12}>
           <Card className={classes.root}>
             <CardActionArea>
               <CardMedia
@@ -201,7 +201,7 @@ export default function PortfolioCard() {
           </Card>
         </Grid>
 
-        <Grid item xs={4}>
+        <Grid item med={12}>
           <Card className={classes.root}>
             <CardActionArea>
               <CardMedia
@@ -244,7 +244,7 @@ export default function PortfolioCard() {
           </Card>
         </Grid>
 
-        <Grid item xs={4}>
+        <Grid item med={12}>
           <Card className={classes.root}>
             <CardActionArea>
               <CardMedia

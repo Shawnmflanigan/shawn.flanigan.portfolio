@@ -12,7 +12,7 @@ import IconButton from "@material-ui/core/IconButton";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import WorkIcon from "@material-ui/icons/Work";
 import profileImage from "../images/profileImage.png";
-import Resume from "../images/flaniganresume.pdf"
+import Resume from "../images/resume.jpg"
 import "./ProfileCard.css";
 
 const useStyles = makeStyles({
@@ -45,18 +45,14 @@ export default function ProfileCard() {
               About Me:
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-              mollitia, molestiae quas vel sint commodi repudiandae consequuntur
-              voluptatum laborum numquam blanditiis harum quisquam eius sed odit
-              fugiat iusto fuga praesentium optio, eaque rerum! Provident
-              similique accusantium nemo autem. Veritatis obcaecati tenetur iure
-              eius earum ut molestias architecto voluptate aliquam nihil,
-              eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
-              tenetur error, harum nesciunt ipsum debitis quas aliquid.
-              Reprehenderit, quia. Quo neque error repudiandae fuga? Ipsa
-              laudantium molestias eos sapiente officiis modi at sunt excepturi
-              expedita sint? Sed quibusdam recusandae alias error harum maxime
-              adipisci amet laborum.
+              Current student at the University of Oregon's full stack web development coding bootcamp. I graduated from Reed College in 2012 with a degree in Political Science focusing primarily on modeling voter behavior.
+              <br />  <br />  
+              I worked in sales for a few years after graduation and have since discovered a passion for all aspects of web development; from back-end to front-end.
+              <br />  <br /> 
+              I currently live in Portland, Oregon with my wonderful partner, three beautiful children, and
+              our spitfire cat.
+              <br />  <br /> 
+              If you have any questions, or would like to connect on a project, please feel free to reach out to me via the links below.
             </Typography>
           </CardContent>
         </CardActionArea>
@@ -91,7 +87,7 @@ export default function ProfileCard() {
           <IconButton color="primary"
             aria-label="Resume"
             target="blank"
-            href download={Resume}
+            href ={Resume}
             >
             <WorkIcon />
           </IconButton>
