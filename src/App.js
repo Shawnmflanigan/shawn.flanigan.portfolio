@@ -4,6 +4,7 @@ import Portfolio from './pages/Portfolio'
 import Resume from './pages/Resume'
 import MenuAppBar from './components/MenuAppBar'
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route exact path="/portfolio" component = {Portfolio} />
           <Route exact path="/resume" component = {Resume} />
       </div>
+      <Footer />
     </Router>
   )
 }
