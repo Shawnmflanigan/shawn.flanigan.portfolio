@@ -15,7 +15,7 @@ const PortfolioItems = [
         name: "Castaway",
         description: "A CYOA game using express, sequelize, express handlebars, and css/js.",
         github: "https://github.com/Shawnmflanigan/CYOA",
-        link: "",
+        link: "https://castaway-flight-of-the-pheonix.herokuapp.com/",
     },
     {
         id: 2,
@@ -54,8 +54,8 @@ const PortfolioItems = [
         image: Show,
         name: "Show My Show",
         description: "There's a lot to say here",
-        github: "",
-        link: "",
+        github: "https://github.com/PuppyRoadTrip/showmyshow",
+        link: "https://showmyshow.herokuapp.com/",
     },
 ];
 

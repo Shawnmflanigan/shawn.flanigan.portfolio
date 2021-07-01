@@ -3,7 +3,11 @@ import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import CardActions from "@material-ui/core/CardActions";
+import CardMedia from "@material-ui/core/CardMedia";
 // import Typography from "@material-ui/core/Typography";
+
+// css
+import "./Portfolio.css"
 
 // icons
 import GitHubIcon from "@material-ui/icons/GitHub";
@@ -14,18 +18,10 @@ import PortfolioItems from "./PortfolioItems";
 
 const useStyles = makeStyles({
   root: {
-    minWidth: 275,
+    maxWidth: 5000
   },
-  bullet: {
-    display: "inline-block",
-    margin: "0 2px",
-    transform: "scale(0.8)",
-  },
-  title: {
-    fontSize: 14,
-  },
-  pos: {
-    marginBottom: 12,
+  media: {
+    height: 400,
   },
 });
 
@@ -33,16 +29,22 @@ function PortfolioCard() {
   const classes = useStyles();
 
   return (
-    <Card className={classes.root} variant="outlined">
+    <Card className={classes.root} variant="outlined" justify content="center">
       <CardContent>
         {PortfolioItems.map((PortfolioItems) => (
           <Card
             className={classes.root}
+            class="portfolioItem"
             variant="outlined"
             key={PortfolioItems.id}
           >
             <h1>{PortfolioItems.name}</h1>
-            <img alt={PortfolioItems.name} src={PortfolioItems.image}></img>
+            <CardMedia
+              className={classes.media}
+              image={PortfolioItems.image}
+              title={PortfolioItems.name}
+            />
+
             <h2>Description</h2>
             <p>{PortfolioItems.description}</p>
             <CardActions>
@@ -55,7 +57,12 @@ function PortfolioCard() {
                 >
                   <GitHubIcon />
                 </IconButton>
-                <IconButton color="primary" aria-label="Website" target="blank" href={PortfolioItems.link}>
+                <IconButton
+                  color="primary"
+                  aria-label="Website"
+                  target="blank"
+                  href={PortfolioItems.link}
+                >
                   <LanguageIcon />
                 </IconButton>
               </div>
