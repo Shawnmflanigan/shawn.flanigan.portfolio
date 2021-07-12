@@ -18,10 +18,10 @@ import PortfolioItems from "./PortfolioItems";
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 5000
+    maxWidth: 500,
   },
   media: {
-    height: 400,
+    height: 250,
   },
 });
 
@@ -29,6 +29,10 @@ function PortfolioCard() {
   const classes = useStyles();
 
   return (
+    <div
+      width="100%"
+      id="boxContainer"
+    >
     <Card className={classes.root} variant="outlined" justify content="center">
       <CardContent>
         {PortfolioItems.map((PortfolioItems) => (
@@ -71,6 +75,7 @@ function PortfolioCard() {
         ))}
       </CardContent>
     </Card>
+    </div>
   );
 }
 
