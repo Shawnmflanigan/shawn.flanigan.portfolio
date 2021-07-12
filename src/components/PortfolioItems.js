@@ -14,6 +14,7 @@ const PortfolioItems = [
         image: Castaway,
         name: "Castaway",
         description: "A CYOA game using express, sequelize, express handlebars, and css/js.",
+        myrole: "UX & UI, Front-end/Back-end integration, general styling",
         github: "https://github.com/Shawnmflanigan/CYOA",
         link: "https://castaway-flight-of-the-pheonix.herokuapp.com/",
     },

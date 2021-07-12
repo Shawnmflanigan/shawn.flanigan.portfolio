@@ -45,12 +45,12 @@ export default function ProfileCard() {
               About Me:
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              Current student at the University of Oregon's full stack web development coding bootcamp. I graduated from Reed College in 2012 with a degree in Political Science focusing primarily on modeling voter behavior.
+            I recently received my Full Stack Web Development certificate from the University of Oregon bootcamp. I have a particular interest in database management, security, and UX but enjoy most all elements of development and engineering.
               <br />  <br />  
-              I worked in sales for a few years after graduation and have since discovered a passion for all aspects of web development; from back-end to front-end.
+              I graduated from Reed College with a degree in Political Science primarily focusing on large scale voter behavior and building predictive models. While at Reed I worked as a research assistant for the Early Voting Information Center helping to build out the front facing web application and as an Editorial Assistant for the Election Law Journal.
+
               <br />  <br /> 
-              I currently live in Portland, Oregon with my wonderful partner, three beautiful children, and
-              our spitfire cat.
+              As an eager learner and natural helper, I’m excited to use my technical skills and collaborative nature to write cleaner code, identify errors, and help your team to continue to develop innovative and enticing work.
               <br />  <br /> 
               If you have any questions, or would like to connect on a project, please feel free to reach out to me via the links below.
             </Typography>

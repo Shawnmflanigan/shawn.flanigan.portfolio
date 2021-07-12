@@ -51,6 +51,8 @@ function PortfolioCard() {
 
             <h2>Description</h2>
             <p>{PortfolioItems.description}</p>
+            <h3>My Role</h3>
+            <p>{PortfolioItems.myrole}</p>
             <CardActions>
               <div>
                 <IconButton
