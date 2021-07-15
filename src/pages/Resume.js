@@ -4,6 +4,7 @@ import Card from "@material-ui/core/Card";
 import CardMedia from "@material-ui/core/CardMedia";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import Resume from "../images/resume.jpg";
+import Resume2 from "../images/resume2.jpg"
 import '../components/ProfileCard.css'
 
 const useStyles = makeStyles({
@@ -11,8 +12,8 @@ const useStyles = makeStyles({
     maxWidth: 500,
   },
   media: {
-    height: 700,
-    width: 550,
+    height: 800,
+    width: 500,
   },
 });
 
@@ -29,7 +30,12 @@ export default function ResumePage() {
           <CardMedia
             className={classes.media}
             image={Resume}
-            title="Profile Image"
+            title="Resume 1st"
+          />
+          <CardMedia
+            className={classes.media}
+            image={Resume2}
+            title="Resume 2nd"
           />
         </CardActionArea>
         </Card>
