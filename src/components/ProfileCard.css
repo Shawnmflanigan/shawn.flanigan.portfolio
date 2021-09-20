@@ -4,3 +4,7 @@
   align-items: center;
   /* margin-left: 1rem; */
 }
+
+#warning {
+  font-style: italic;
+}

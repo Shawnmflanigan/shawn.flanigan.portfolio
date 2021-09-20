@@ -35,6 +35,7 @@ function PortfolioCard() {
     >
     <Card className={classes.root} variant="outlined" justify content="center">
       <CardContent>
+      <h5 id="warning">Please note: all my portfolio items are hosted on Heroku so they may take a minute to warm up.</h5>
         {PortfolioItems.map((PortfolioItems) => (
           <Card
             className={classes.root}
